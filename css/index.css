@@ -4,9 +4,17 @@
 .bi-list-nested:hover{
     color: white;
 }
-.saiudigitals{
-    height: 80px;
-  width: 195px;
+@media(max-width:900px){
+    .saiudigitals{
+        height: 60px;
+      width: 150px;
+    }
+}
+@media(min-width:900px){
+    .saiudigitals{
+        height: 75px;
+      width: 180px;
+    }
 }
 .navbar-nav{
     margin-left: 0px !important;
@@ -64,7 +72,17 @@ body{
     width: 100%;
 }
 .iam{
-    margin-top: 80px;
+    margin-top: 50px;
+}
+@media(max-width:900px){
+    .iam{
+        margin-top: 40px;
+    }
+}
+@media(min-width:900px){
+    .iam{
+        margin-top: 80px;
+    }
 }
 .iop{
     color: lavender;
@@ -114,14 +132,20 @@ body{
 .box:nth-child(7) .item{
     color:lavender;
 }
-.box:hover{
-    transform: scale(1.8) translateY(-20px);
+@media(min-width:900px){
+    .box:has(+ .box:hover) {
+        transform: scale(1.1) translateY(-10px);
+    }
 }
-.box:hover +.box{
-    transform: scale(1.1) translateY(-10px);
+@media(min-width:900px){
+    .box:hover +.box{
+        transform: scale(1.1) translateY(-10px);
+    }
 }
-.box:has(+ .box:hover) {
-    transform: scale(1.1) translateY(-10px);
+@media(min-width:900px){
+    .box:hover{
+        transform: scale(1.8) translateY(-20px);
+    }
 }
 
 .con{
@@ -225,4 +249,40 @@ body{
     color: rgb(58, 58, 58);
     font-size: 21px;
     font-weight: bold;
+}
+.progress{
+    appearance: none;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 7px;
+    border-radius: 0px;
+}
+@media(max-width:900px){
+    .progress{
+        margin-top: 83px;
+    }
+}
+@media(min-width:900px){
+    .progress{
+        margin-top: 96px;
+    }
+}
+.progress::-webkit-progress-bar{
+    background-color: rgb(17, 17, 17);
+}
+.progress::-webkit-progress-value{
+    background-color: lavender;
+}
+.progress::-moz-progress-bar{
+    background-color:rgb(17, 17, 17);
+}
+.who{
+  text-align: center;
+}
+.thisguy{
+    text-align: center;
+    color: black;
 }

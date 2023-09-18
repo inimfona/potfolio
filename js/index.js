@@ -6,29 +6,17 @@ var typed = new Typed('.autotyped', {
     fadeOut: true,
     loop: true
   });
-  images = new Array;
-images[0] = "img/exboy1.png";
-images[1] = "img/exboy3.png";
-images[2] = "img/exboy2.png";
 
-
-setInterval( function() {
-    changeImage()
-}, 5000);
-
-x = 0;
-
-function changeImage() {
-    document.querySelector('.boytype').src = images[x];
-
-    if ( x < 2) {
-        x += 1;
-    } else if ( x = 3) {
-        x = 0;
-    }
+let progress=document.querySelector('#progress')
+let html =document.querySelector('html')
+function scroll(){
+    let screenHeight =window.innerHeight
+    let scrolly = (window.innerHeight)
+    let maxscreenhheight=html.scrollHeight
+    console.log(screenHeight,scrolly)
+    let howmuchuserscroll=screenHeight+scrollY
+    let progres= (howmuchuserscroll / maxscreenhheight)*100
+    progress.value=progres
 }
-let handburger =document.querySelector('.handburger')
-handburger.addEventListener('click',()=>{
-    handburger.classList.toggle('active');
-    
-})
+scroll()
+window.addEventListener('scroll',scroll)
