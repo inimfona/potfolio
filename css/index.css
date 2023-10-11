@@ -197,7 +197,6 @@ body{
     text-align: center; 
     padding-top: 20px; 
     display:inline;  
-    color: black;
 }
 .btnd{
     width: 20px ;
@@ -206,6 +205,15 @@ body{
     bottom: 20px;
     border: none;
     background-color: black;
+    height: 3px;
+}
+.btnd2{
+    width: 20px ;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    border: none;
+    background-color: white;
     height: 3px;
 }
 .center2{
@@ -257,7 +265,7 @@ body{
     width: 100%;
     top:0;
     left: 0;
-    height: 7px;
+    height: 2px;
     border-radius: 0px;
     z-index: 3000;
 }
@@ -266,11 +274,7 @@ body{
         margin-top: 83px;
     }
 }
-@media(min-width:900px){
-    .progress{
-        margin-top: 96px;
-    }
-}
+
 .progress::-webkit-progress-bar{
     background-color: rgb(17, 17, 17);
 }
@@ -315,4 +319,49 @@ body{
     position: relative;
     top: 15px;
     font-size: 17px;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.graphic{
+    font-weight: bold;
+}
+.border1{
+   
+}
+.image-block{
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imagecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.botton{
+    margin-bottom: 2px;
+}
+.width{
+    width: 50%;
+    border-radius: 10px;
+   
+}
+.works{
+    text-align: center;
+}
+@media(min-width:900px){
+    .works2{
+        padding-top: 130px;
+    }
+}
+.width2{
+    width:100%;
+    border-radius: 5px;
 }
